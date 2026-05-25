@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>聖于工業有限公司 | 金屬加工製造</title>
+
+<meta name="description" content="聖于工業有限公司專營電氣鐵箱、鐵風管、白鐵五金零件與金屬加工製造。提供專業客製化金屬加工服務。">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Noto Sans TC',sans-serif;
+    background:#f5f7fa;
+    color:#222;
+    line-height:1.8;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Navbar */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#0f172a;
+    z-index:999;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:40px;
+    font-weight:700;
+    color:#fff;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    color:#fff;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:#38bdf8;
+    color:#fff;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+/* Sections */
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:40px;
+    margin-bottom:10px;
+    color:#0f172a;
+}
+
+.section-title p{
+    color:#64748b;
+}
+
+/* About */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* Services */
+
+.services{
+    background:#fff;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#f8fafc;
+    padding:40px 30px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+/* Features */
+
+.features{
+    background:#0f172a;
+    color:#fff;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    text-align:center;
+}
+
+.feature-item h3{
+    font-size:48px;
+    color:#38bdf8;
+}
+
+/* Contact */
+
+.contact-box{
+    background:#fff;
+    padding:50px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+form button{
+    border:none;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:#020617;
+    color:#fff;
+    text-align:center;
+    padding:30px 0;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .menu{
+        display:none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container nav-content">
+        <div class="logo">聖于工業有限公司</div>
+
+        <div class="menu">
+            <a href="#about">公司簡介</a>
+            <a href="#services">服務項目</a>
+            <a href="#features">核心優勢</a>
+            <a href="#contact">聯絡我們</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+    <div class="container hero-content">
+        <h1>專業金屬加工製造</h1>
+
+        <p>
+            聖于工業有限公司專營電氣鐵箱、鐵風管、
+            白鐵五金零件與各式金屬加工製造，
+            提供穩定品質與專業客製化服務。
+        </p>
+
+        <a href="#contact" class="btn">立即聯絡</a>
+    </div>
+</section>
+
+<!-- About -->
+
+<section class="about" id="about">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>公司簡介</h2>
+            <p>Professional Metal Manufacturing</p>
+        </div>
+
+        <div class="about-grid">
+
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop">
+
+            <div>
+                <h3 style="font-size:32px; margin-bottom:20px;">
+                    聖于工業有限公司
+                </h3>
+
+                <p>
+                    專注於客製化金屬加工與工業製造，
+                    提供鐵箱、鐵風管、白鐵五金零件等產品加工服務。
+                </p>
+
+                <br>
+
+                <p>
+                    我們重視品質、效率與客戶需求，
+                    致力成為值得信賴的工業製造合作夥伴。
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Services -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>服務項目</h2>
+            <p>Our Services</p>
+        </div>
+
+        <div class="service-grid">
+
+            <div class="card">
+                <h3>電氣鐵箱製造</h3>
+                <p>
+                    提供各式工業用電氣鐵箱製作。
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>鐵風管加工</h3>
+                <p>
+                    專業風管製造與客製化金屬加工服務。
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>白鐵五金零件</h3>
+                <p>
+                    白鐵與金屬零件加工、焊接與製造。
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>客製化加工</h3>
+                <p>
+                    根據客戶需求進行客製化工業製造服務。
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Features -->
+
+<section class="features" id="features">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2 style="color:white;">核心優勢</h2>
+            <p>Why Choose Us</p>
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-item">
+                <h3>30+</h3>
+                <p>年產業經驗</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>100%</h3>
+                <p>客製化服務</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>高品質</h3>
+                <p>嚴格品質管理</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>快速</h3>
+                <p>穩定交期效率</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>聯絡我們</h2>
+            <p>Contact Us</p>
+        </div>
+
+        <div class="contact-box">
+
+            <div class="contact-grid">
+
+                <div>
+
+                    <h3 style="margin-bottom:20px;">公司資訊</h3>
+
+                    <p>
+                        公司名稱：聖于工業有限公司
+                    </p>
+
+                    <p>
+                        地址：新北市樹林區中洲街29-1-2號
+                    </p>
+
+                    <p>
+                        電話：02-2668-3251
+                    </p>
+                    <p>
+                        LINE:ss0928105425
+                    </p>
+
+                    <p>
+                        sheng.yu01@msa.hient.net
+                    </p>
+
+                </div>
+
+                <form>
+
+                    <input type="text" placeholder="您的姓名">
+
+                    <input type="email" placeholder="Email">
+
+                    <textarea rows="5" placeholder="請輸入您的需求"></textarea>
+
+                    <a href="mailto:sheng.yu01@msa.hinet.net" class="btn">
+    送出詢問
+</a>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="container">
+        © 2026 聖于工業有限公司 SANG YU INDUSTRY CO., LTD.
+    </div>
+</footer>
+
+</body>
+</html>
